@@ -1,0 +1,3 @@
+﻿  практика.cpp
+C:\Users\user\Desktop\практика\практика\практика.cpp(13,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  практика.vcxproj -> C:\Users\user\Desktop\практика\практика\x64\Debug\практика.exe
