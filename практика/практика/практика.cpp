@@ -123,6 +123,7 @@ int main()
             printf("Введите размер массива\n");
             std::cin >> size;
             m = new int[size];
+            printf("\nМассив создан\n\n");
             break;
         case 2:
             writeFile(size);
