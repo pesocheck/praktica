@@ -110,11 +110,12 @@ int main()
         printf("1. Ввести размер массива\n");
         printf("2. Создать рандомную последовательность и записать в файл\n");
         printf("3. Прочитать данные из файла\n");
-        printf("4. Отсортировать список используя метод Шейкерной сортировки\n");
+        printf("4. Отсортировать список используя метод Вставками сортировки\n");
         printf("5. Загрузить отсортированные данные в файл\n");
         printf("6. Выход                                                                   Последняя сортировка заняла: %s\n", buffer);
         scanf("%d", &choice);
-        system("cls");
+       
+
 
         switch (choice) {
         case 1:
@@ -125,7 +126,7 @@ int main()
             break;
         case 2:
             writeFile(size);
-            printf("Данные записанный в файл.\n");
+            printf("\nДанные записанны в файл.\n\n");
             break;
         case 3:
             if (!m)
@@ -136,24 +137,24 @@ int main()
             }
             else {
                 readFile("input.txt", m, &count, size);
-                printf("Данные прочитанный с файла.\n");
+                printf("\nДанные прочитанны с файла.\n\n");
             }
             break;
         case 4:
             insertion_sort(m, size);
-            printf("Данные отсортированный.\n");
+            printf("\nДанные отсортированны.\n\n");
             break;
         case 5:
             writeFileData(m, size);
-            printf("Данные записанны в файл.\n");
+            printf("\nДанные записанны в файл.\n\n");
             break;
         case 6:
             delete[] m;
             return 0;
         default:
-            printf("Ошибка.\n Попробуте снова.\n");
+            printf("\nОшибка.\n Попробуте снова.\n\n");
         }
-        system("cls");
+       
 
     }
     return 0;
